@@ -70,29 +70,29 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.popular .secContainer .mainContent .singleDestination .destImage .overlayinfo {
+.popular .secContainer .mainContent .singleDestination .destImage .overlayInfo {
   position: absolute;
   display: flex;
   align-items: flex-start;
-  padding: 1rem 1.5rem;
+  padding: 0;
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.749));
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 0;
   overflow: hidden;
 }
-.popular .secContainer .mainContent .singleDestination .destImage .overlayinfo h3 {
+.popular .secContainer .mainContent .singleDestination .destImage .overlayInfo h3 {
   color: var(--whiteColor);
   font-weight: 600;
 }
-.popular .secContainer .mainContent .singleDestination .destImage .overlayinfo p {
+.popular .secContainer .mainContent .singleDestination .destImage .overlayInfo p {
   color: var(--whiteColor);
   opacity: 0.7;
   font-size: 13px;
 }
-.popular .secContainer .mainContent .singleDestination .destImage .overlayinfo .icon {
+.popular .secContainer .mainContent .singleDestination .destImage .overlayInfo .icon {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -104,8 +104,50 @@
   border: 1px solid transparent;
   transition: 0.3s ease;
 }
-.popular .secContainer .mainContent .singleDestination .destImage .overlayinfo .icon:hover {
+.popular .secContainer .mainContent .singleDestination .destImage .overlayInfo .icon:hover {
   background: var(--blackColor);
   border: 1px solid var(--PrimaryColor);
   color: var(--PrimaryColor);
+}
+.popular .secContainer .mainContent .singleDestination .destFooter {
+  padding: 1rem;
+}
+.popular .secContainer .mainContent .singleDestination .destFooter .number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blackColor);
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+.popular .secContainer .mainContent .singleDestination .destFooter .number::after {
+  content: "";
+  position: absolute;
+  background: var(--PrimaryColor);
+  top: 45%;
+  right: -150%;
+  height: 5px;
+  width: 45px;
+  border-radius: 1rem;
+}
+.popular .secContainer .mainContent .singleDestination .destFooter .destText {
+  justify-content: space-between;
+}
+.popular .secContainer .mainContent .singleDestination .destFooter .destText h6 {
+  color: var(--blackColor);
+  font-size: 15px;
+}
+.popular .secContainer .mainContent .singleDestination .destFooter .destText .flex {
+  font-size: 16px;
+  font-weight: 600;
+  align-items: flex-start;
+  transform: translateY(5px);
+}
+.popular .secContainer .mainContent .singleDestination .destFooter .destText .flex .icon {
+  color: var(--PrimaryColor);
+}
+.popular .secContainer .mainContent .singleDestination:hover .overlayInfo {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
 }/*# sourceMappingURL=popular.css.map */

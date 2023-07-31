@@ -1,7 +1,42 @@
 import React from "react";
 import { BsArrowLeftShort, BsArrowRightShort, BsDot } from "react-icons/bs";
-import img from "../../assets/Popular-img1.jpg";
+import img1 from "../../assets/Popular-img1.jpg";
+import img2 from "../../assets/Popular-img2.jpg";
+import img3 from "../../assets/Popular-img3.jpg";
+import img4 from "../../assets/Popular-img4.jpg";
+import img5 from "../../assets/Popular-img5.jpg";
 import "./popular.css";
+
+const Data = [
+  {
+    id: 1,
+    imgSrc: img2,
+    destTitle: "Machu pichu",
+    location: "Peru",
+    grade: "CULTURAL RELAX",
+  },
+  {
+    id: 2,
+    imgSrc: img3,
+    destTitle: "Guanajuato",
+    location: "Mexico",
+    grade: "CULTURAL RELAX",
+  },
+  {
+    id: 3,
+    imgSrc: img4,
+    destTitle: "Angkor Wat",
+    location: "Cambodia",
+    grade: "CULTURAL RELAX",
+  },
+  {
+    id: 4,
+    imgSrc: img5,
+    destTitle: "Taj Mahal",
+    location: "India",
+    grade: "CULTURAL RELAX",
+  },
+];
 
 const Popular = () => {
   return (
@@ -24,7 +59,7 @@ const Popular = () => {
         <div className="mainContent grid">
           <div className="singleDestination">
             <div className="destImage">
-              <img src={img} alt="Image Title" />
+              <img src={img1} alt="Image Title" />
               <div className="overlayInfo">
                 <h3>Some Text</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
