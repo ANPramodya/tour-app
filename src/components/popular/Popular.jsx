@@ -1,6 +1,5 @@
 import React from "react";
 import { BsArrowLeftShort, BsArrowRightShort, BsDot } from "react-icons/bs";
-import img1 from "../../assets/Popular-img1.jpg";
 import img2 from "../../assets/Popular-img2.jpg";
 import img3 from "../../assets/Popular-img3.jpg";
 import img4 from "../../assets/Popular-img4.jpg";
