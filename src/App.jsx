@@ -15,8 +15,8 @@ function App() {
       <Popular />
       <Offer />
       <About />
-      {/* <Blog />
-      <Footer /> */}
+      <Blog />
+      {/* <Footer /> */}
     </>
   );
 }
