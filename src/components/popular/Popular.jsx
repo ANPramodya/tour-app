@@ -57,28 +57,32 @@ const Popular = () => {
         </div>
 
         <div className="mainContent grid">
-          <div className="singleDestination">
-            <div className="destImage">
-              <img src={img1} alt="Image Title" />
-              <div className="overlayInfo">
-                <h3>Some Text</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <BsArrowRightShort className="icon" />
+          {Data.map(({ id, imgSrc, destTitle, location, grade }) => {
+            return (
+              <div className="singleDestination">
+                <div className="destImage">
+                  <img src={imgSrc} alt="Image Title" />
+                  <div className="overlayInfo">
+                    <h3>{destTitle}</h3>
+                    <p>{location}</p>
+                    <BsArrowRightShort className="icon" />
+                  </div>
+                </div>
+                <div className="destFooter">
+                  <div className="number">0{id}</div>
+                  <div className="destText flex">
+                    <h6>{location}</h6>
+                    <span className="flex">
+                      <span className="dot">
+                        <BsDot className="icon" />
+                      </span>
+                      Dot
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="destFooter">
-              <div className="number">01</div>
-              <div className="destText flex">
-                <h6>London</h6>
-                <span className="flex">
-                  <span className="dot">
-                    <BsDot className="icon" />
-                  </span>
-                  Dot
-                </span>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
