@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="secContainer container grid">
         <div className="logoDiv">
           <div className="footerLogo">
-            <a href="#" className="logo">
+            <a href="#" className="logo flex">
               <h1 className="flex">
                 <SiYourtraveldottv className="icon" />
                 Dot
