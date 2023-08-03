@@ -143,4 +143,12 @@
   .home .secContainer .homeText .subTitle {
     width: 70%;
   }
+}
+@media screen and (min-width: 1024px) {
+  .home .secContainer .homeText .subTitle {
+    font-size: 20px;
+  }
+  .home .secContainer .homeCard {
+    width: 70%;
+  }
 }/*# sourceMappingURL=home.css.map */
