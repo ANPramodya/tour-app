@@ -136,3 +136,34 @@
     }
   }
 }
+
+@media screen and (min-width: 720px) {
+  .home {
+    .secContainer {
+      .homeCard {
+        bottom: -10%;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .home {
+    .secContainer {
+      .homeText {
+        padding: 1rem 10rem;
+
+        .title {
+          font-size: 3.5rem;
+          margin: auto;
+          line-height: 4rem;
+        }
+
+        .subTitle {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

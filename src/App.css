@@ -102,7 +102,21 @@ input {
 /* ============== Media Queries ======================*/
 
 @media screen and (min-width: 556px) {
-  .mainContent {
+  .mainContent,
+  .singlePost {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 884px) {
+  .mainContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 75% !important;
+    margin: auto !important;
   }
 }

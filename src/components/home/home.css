@@ -124,4 +124,23 @@
   .home .secContainer .homeText .subTitle {
     font-size: 18px;
   }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .homeCard {
+    bottom: -10%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .homeText {
+    padding: 1rem 10rem;
+  }
+  .home .secContainer .homeText .title {
+    font-size: 3.5rem;
+    margin: auto;
+    line-height: 4rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    width: 70%;
+  }
 }/*# sourceMappingURL=home.css.map */
