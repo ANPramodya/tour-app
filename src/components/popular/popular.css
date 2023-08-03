@@ -150,4 +150,11 @@
   overflow: visible;
   padding: 1rem 1.5rem;
   height: 100%;
+}
+
+/* ============== Media Queries ======================*/
+@media screen and (min-width: 480px) {
+  .popular {
+    padding-top: 10rem;
+  }
 }/*# sourceMappingURL=popular.css.map */

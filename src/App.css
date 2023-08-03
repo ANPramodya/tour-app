@@ -98,3 +98,11 @@ img video {
 input {
   font-size: 100%;
 }
+
+/* ============== Media Queries ======================*/
+
+@media screen and (min-width: 556px) {
+  .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -104,4 +104,24 @@
   padding: 0.6rem 1.5rem;
   color: var(--whiteColor);
   font-weight: 600;
+}
+
+/* ============== Media Queries ======================*/
+@media screen and (min-width: 480px) {
+  .home .secContainer .homeCard {
+    bottom: -100px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .secContainer .homeCard .btn {
+    transform: translateY(15px);
+  }
+}
+@media screen and (min-width: 556px) {
+  .home .secContainer .homeText .title {
+    font-size: 2.5rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=home.css.map */
