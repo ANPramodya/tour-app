@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../assets/Mountain-img.png";
 import img2 from "../../assets/Climber-img.png";
 import img3 from "../../assets/Customer-img.png";
 import video from "../../assets/video.mp4";
 import "./about.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className="about section">
       <div className="secContainer">

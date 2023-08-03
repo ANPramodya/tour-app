@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   MdKingBed,
   MdBathtub,
@@ -12,6 +12,9 @@ import img2 from "../../assets/Offer-img2.jpg";
 import img3 from "../../assets/Offer-img3.jpg";
 import img4 from "../../assets/Offer-img4.jpg";
 import "./offer.css";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Offers = [
   {
@@ -45,12 +48,18 @@ const Offers = [
 ];
 
 const Offer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className="offer container section">
       <div className="secContainer">
         <div className="secIntro">
-          <h2 className="secTitle">Special Offers</h2>
-          <p>
+          <h2 data-aos="fade-up" data-aos-duration="2000" className="secTitle">
+            Special Offers
+          </h2>
+          <p data-aos="fade-up" data-aos-duration="2500">
             From historical cities to natural spectaculars, come see the best of
             the world!
           </p>
@@ -58,7 +67,11 @@ const Offer = () => {
         <div className="mainContent grid">
           {Offers.map(({ id, imgSrc, destTitle, location, price }) => {
             return (
-              <div className="singleOffer">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="singleOffer"
+              >
                 <div className="destImage">
                   <img src={imgSrc} alt={destTitle} />
                   <span className="discount">30% Off</span>
