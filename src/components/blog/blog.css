@@ -58,4 +58,11 @@
 }
 .blog .mainContainer .singlePost a:hover .icon {
   transform: translateX(10px);
+}
+
+/* ============== Media Queries ===================== */
+@media screen and (min-width: 884px) {
+  .blog .mainContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=blog.css.map */
