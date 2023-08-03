@@ -36,6 +36,7 @@
 }
 .offer .secContainer .mainContent .singleOffer .destImage img {
   height: 100%;
+  width: 100%;
 }
 .offer .secContainer .mainContent .singleOffer .destImage .discount {
   position: absolute;
