@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { SiYourtraveldottv } from "react-icons/si";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+import { GiFootprint } from "react-icons/gi";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -30,8 +31,8 @@ const Navbar = () => {
         <div className="logoDiv">
           <a href="#" className="logo">
             <h1 className="flex">
-              <SiYourtraveldottv className="icon" />
-              Dot
+              <GiFootprint className="icon" />
+              Yaman
             </h1>
           </a>
         </div>
@@ -53,12 +54,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">
+              <a href="#footer" className="navLink">
                 Contact
               </a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">
+              <a href="#blog" className="navLink">
                 Blog
               </a>
             </li>

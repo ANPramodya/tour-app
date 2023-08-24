@@ -14,7 +14,7 @@ const Home = () => {
       <div className="secContainer container">
         <div className="homeText">
           <h1 data-aos="fade-up" className="title">
-            Plan Your Trip With Travel Dot
+            Plan Your Trip With Travel Yaman
           </h1>
           <p data-aos="fade-up" data-aos-duration="2500" className="subTitle">
             Travel to your city with respect to your environment!

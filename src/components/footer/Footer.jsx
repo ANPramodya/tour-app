@@ -3,6 +3,7 @@ import { SiYourtraveldottv } from "react-icons/si";
 import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
+import { GiFootprint } from "react-icons/gi";
 import "./footer.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +13,7 @@ const Footer = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="secContainer container grid">
         <div data-aos="fade-up" data-aos-duration="2000" className="logoDiv">
           <div
@@ -22,8 +23,8 @@ const Footer = () => {
           >
             <a href="#" className="logo flex">
               <h1 className="flex">
-                <SiYourtraveldottv className="icon" />
-                Dot
+                <GiFootprint className="icon" />
+                Yaman
               </h1>
             </a>
           </div>

@@ -40,7 +40,7 @@ const Blog = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section className="blog container section">
+    <section className="blog container section" id="blog">
       <div className="secContainer">
         <div className="secIntro">
           <h2 data-aos="fade-up" data-aos-duration="2000" className="secTitle">
